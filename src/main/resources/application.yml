@@ -1,0 +1,24 @@
+# Enable to include message property in default response error model
+#server:
+#  error:
+#    include-message: always
+
+ol:
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wtaHViIiwidmFsaWRfZm9yIjo2MCwiaXNzdWVkX2F0IjoiMjAyMy0wMy0yNlQwNTo0Njo0Ny45MDQ0MzUyOTRaIiwiZXhwaXJ5X2RhdGUiOiIyMDIzLTA3LTAxVDAwOjAwOjAwWiIsImN1c3RvbWVyX25hbWUiOiJWTXdhcmUgLSBwZWx0Z3JvdGhAdm13YXJlLmNvbSIsImN1c3RvbWVyX3R5cGUiOiJUUklBTCIsImxpY2Vuc2VfdHlwZSI6IlNBQVMiLCJvYmplY3RfbGltaXRzIjp7Im1ldGhvZHMiOi0xLCJwcmVtaXVtTWV0aG9kcyI6LTEsInB1Ymxpc2hlZFByb2plY3RzIjozLCJhcGlDYWxscyI6MjAwMH0sImNvbm5lY3RvcnMiOlsiKiJdfQ.NdT9ws4_WCXQ-vZpA91DB0mfUz11SK-1eLvFcQz4AyqIGWWJxzf2cvdmDUeylvknYWATbnaEUa-MYA_nia-9fFAYwzBs7aQOwIXeFPGNEJNQFlC2QLgLfoMJno2_r3HjQXczodOogxjZbDuwDvXCCBkp_zT1Qe2arkdsHe8Sqhl1At4TVtsIoPGLnP6IT0SZbZmjhr_SQftgir29mDpqMtY1_45vmrGSW0CYg1Qt1RHXVc3h4-jE1SIcZU0w9wG_AY837bVYN16aV36sZgUJEOV2J-ZYiJoul4O-IIADeztV-i2VwQbal3XaUZfOkViLUTPb4q2VntRHdCy6jbSu8A
+  flow:
+    source-provider: HUB
+    hub:
+      url: https://api.ol-hub.com
+      api-key: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJlYTJkNTMyZS1iYjExLTRmOTEtYTA5Zi05MDViNTY1NzZmNGYiLCJ0aWQiOiI0ZGFlMGQ0YS0xMDJjLTRlMTctYTk1YS0zYTZjNzc4NjBlYjAiLCJodHRwczovL29sLnRlbmFudHMvcmVnaW9uIjoiVVMiLCJpYXQiOjE2Nzk5NDcxOTYsImlzcyI6Im9sIiwic3ViIjoiYXV0aDB8NjI5ZjZjNGZhN2Q5NmUwMDZmOGJlYjMwIn0.OkNtM1J8wYlZbxuLRZsxk4fcx-x2ISCE0M6ip99vKha9eaqs19Pdy8_YiGlnw_iNgxVlwDxnEDygiXJmajhOTU59Hs2wMzMOBWZwgACDaj0DejIi9dTTSSRuF6yRB3LrHd-DtTnSUHxxLzNfm7wQpTtjQOjJFB4JtjVl0YBIZ9KGIrmJh947geEmShoWp2MP6A9_IUW3FtelWKPazTjTcgGpxcDdT9M4w7t4urmdlrsB4-33etP7chR1dr8Mir2Um1iDDkPkPf3xaNgyfcIvXRWmDex3PyalsiZWKGaE--tfTKPogR1k3k1uFQVcZr5eGu64RjJOM8sEAJfyUfd2NQ
+      project-name: demo-ol-cics
+    agent:
+      enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - prometheus
+
